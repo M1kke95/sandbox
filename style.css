@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 1;
+}
+
+header nav h3{
+    float: left;
+}
+header nav ul{
+    float: right;
+}
