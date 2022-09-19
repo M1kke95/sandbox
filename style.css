@@ -1,3 +1,4 @@
+/*<<<<<<< HEAD*/
 @media only screen and (max-width: 600px){
     nav{
         display: flex;
@@ -21,3 +22,21 @@
 
     }
 } 
+/*=======*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 1;
+}
+
+header nav h3{
+    float: left;
+}
+header nav ul{
+    float: right;
+}
+
+header nav ul li
+/*>>>>>>> 284337537bb349efb76c690204e2c49e6d16a554*/
