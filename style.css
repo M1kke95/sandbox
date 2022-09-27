@@ -79,13 +79,6 @@ main section{
     box-shadow: 10px 10px 10px 10px black;
 }
 
-footer{
-    grid-area: footer;
-    background-color:rgb(23, 39, 45);
-    text-align: center;
-    
-}
-
 /*#mainmenu{
     position: absolute;
     height: 109px;
@@ -113,6 +106,7 @@ footer{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    align-items: baseline;
 }
 
 .navbar a:visited{
@@ -120,6 +114,7 @@ footer{
 }
 
 .logo{
+    display: flex;
     max-width: 50px;
     align-items: baseline;
 }
@@ -128,7 +123,7 @@ footer{
     list-style: none;
 }
 
-.image{
+/*.image{
     background-image: url(img/ux-store-jJT2r2n7lYA-unsplash.jpg);
     border: 1px solid black;
     background-repeat: no-repeat;
@@ -136,6 +131,17 @@ footer{
     max-width: 100%;
     height: auto;
     text-size-adjust: 150px;
+}*/
+
+.image{
+    background-image: url(img/ux-store-jJT2r2n7lYA-unsplash.jpg);
+    border: 1px solid black;
+    max-width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
 }
 
 h1{
@@ -149,3 +155,47 @@ h1{
     background-color: gray;
     color: white;
 }
+
+footer{
+    grid-area: footer;
+    background-color:rgb(23, 39, 45);
+    text-align: center;
+    
+}
+
+footer p{
+    color: #f2f2f2;
+}
+    @media only screen and (min-width:900px) {
+        #frontpage{
+            display: grid;
+            grid-template-areas: "header header header" 
+                                  "main main main"
+                                   "footer footer footer";
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: auto auto auto;
+            
+        }
+
+        #intro{
+            grid-area: main;
+            flex-basis: 69rem;
+            flex-grow: 1;
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: 3;
+            grid-column-end: 4;
+        }
+        
+    
+        .article-container{
+            width:100%;
+        }
+
+        footer{
+            grid-area: footer;
+            background-color:rgb(23, 39, 45);
+            text-align: center;
+            
+        }
+    }
